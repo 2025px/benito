@@ -1,0 +1,254 @@
+body {
+  background-image: url("Benito-image.jpg");
+  background-repeat: repeat;
+}
+
+.header {
+  margin: 20px;
+  border-bottom: thick double #32a1ce;
+  
+}
+
+p {
+  color: blue;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  color: blue;
+}
+
+h3 {
+  color: blue;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+li {
+  color: white;
+  text-align: center;
+
+}
+
+a {
+
+  color: white;
+
+  text-align: center;
+
+}
+
+/* .NJHS {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-self: center;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+}
+
+.Rob {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*   flex-flow: row wrap; */
+  /* align-self: flex-start;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+}
+
+.FBLA {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+}
+
+.clubs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  flex-basis: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.club {
+  font-size: 50px;
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+  color: blue;
+  align-self: baseline;
+  flex-basis: 50%;
+  float: right;
+  flex-grow: 3;
+}
+
+.AVID {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+}
+
+.PTSA {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+}
+
+.Book {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+}
+
+.Yearbook {
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+} */ */
+
+h2 a {
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+  background: linear-gradient(to bottom right, white, blue);
+  box-shadow: 5px 5px 5px;
+}
+
+h2 a:hover {
+  background: linear-gradient(to bottom right, blue, white);
+  color: black;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+h6 {
+  font-size: 5px;
+}
+
+.FBLAheading {
+  font-size: 50px;
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: black;
+  border-style: groove;
+  padding: 20px;
+  color: blue;
+  width: 200px;
+}
+
+.FBLAheading2 {
+  font-size: 20px;
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: black;
+  border-style: groove;
+  padding: 2px;
+  color: blue;
+  width: 200px;
+}
+
+.FBLAp {
+  font-size: 20px;
+  background: white;
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: black;
+  border-style: groove;
+  padding: 2px;
+  color: blue;
+  width: px;
+}
+
+h3 a {
+  background: linear-gradient(to top right, rgba(227, 230, 83, 0.911), rgba(245, 174, 43, 0.89));
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+}
+
+h3 a:hover {
+  background: linear-gradient(to bottom right, orange, yellow);
+  color: black;
+}
+
+.learnmore {
+  margin: 50px;
+}
+
+.ContactUs {
+  background: linear-gradient(to bottom right, blue, violet);
+}
+
+.ContactUs:hover {
+  background: linear-gradient(to bottom right, violet, blue)
+}

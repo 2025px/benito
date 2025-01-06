@@ -1,0 +1,1041 @@
+body {
+  box-sizing: border-box;
+  background-color: rgba(234, 234, 234);
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "serif";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.top {
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  top: 0;
+  background: whitesmoke;
+
+  img {
+    width: 180px;
+    height: 100px;
+  }
+
+  .logo {
+    border-bottom: lightskyblue;
+    display: flex;
+    margin-left: 20%;
+
+    .logo-info {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    h1 {
+      color: black;
+      margin: 0;
+    }
+
+    h2 {
+      color: rgba(88, 87, 87, 0.822);
+      margin: 0;
+    }
+  }
+
+
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: darkblue;
+  box-shadow: 5px 5px 10px gray;
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    z-index: 1;
+  }
+}
+
+.menu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: 20%;
+
+  .fa-house {
+    color: white;
+  }
+}
+
+.main-page {
+  width: 1903px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url("20250103_124003.v3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  animation: change 21s ease-in infinite; 
+}
+
+@keyframes change {
+  30% {
+    background-image: url("20250103_124003.v3.jpg");
+  }
+  33% {
+    background-image: url("20250103_124734.jpg");
+  }
+  63% {
+    background-image: url("20250103_124734.jpg");
+  }
+  66% {
+    background-image: url("20250103_124231.v3.jpg");
+  }
+  97% {
+    background-image: url("20250103_124231.v3.jpg");
+  }
+  100% {
+    background-image: url("20250103_124003.v3.jpg");
+  }
+}
+
+main {
+  margin-top: 5rem;
+  margin-left: 8rem;
+}
+
+.side-bar {
+  border: .5px solid #FBCB27;
+  display: flex;
+  flex-flow: column wrap;
+  color: darkblue;
+  padding: 1rem;
+  height: fit-content;
+  margin-right: 2rem;
+  max-width: 400px;
+  min-width: 400px;
+  position: sticky;
+  top: 230px;
+  flex: 1;
+
+  a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: darkblue;
+    border-bottom: 1px solid #FBCB27;
+    padding: 15px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-flow: row;
+  background: darkblue;
+  color: white;
+  width: 100%;
+
+  .img-footer {
+    width: 500px;
+    height: 250px;
+  }
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+
+    .fa-solid {
+      font-size: 3rem;
+      padding-right: 20px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    .visit {
+      margin-right: 3rem;
+      margin-left: 2rem;
+    }
+
+    .contact-us {
+      margin-right: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.side-header {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  width: 250px;
+  height: 100%;
+  background: #0d74f5;
+  position: fixed;
+  left: 0;
+  padding: 20px 30px;
+}
+
+.club-link {
+  list-style: none;
+  position: relative;
+
+  li {
+    padding: 10px 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.club-link li:hover a {
+  color: #0d74f5;
+  transition: 0.3s;
+}
+
+.club-link li:hover~.active {
+  display: block;
+}
+
+.club-link li:nth-child(1):hover~.active {
+  top: 2.6%;
+}
+
+.club-link li:nth-child(2):hover~.active {
+  top: 19.2%;
+}
+
+.club-link li:nth-child(3):hover~.active {
+  top: 35.8%;
+}
+
+.club-link li:nth-child(4):hover~.active {
+  top: 52.4%;
+}
+
+.club-link li:nth-child(5):hover~.active {
+  top: 69%;
+}
+
+.club-link li:nth-child(6):hover~.active {
+  top: 85.6%;
+}
+
+.active {
+  background: whitesmoke;
+  width: 100%;
+  height: 47px;
+  position: absolute;
+  left: 0;
+  top: 2.6%;
+  z-index: -1;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+  display: none;
+  transition: top 0.5s;
+}
+
+
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 30rem;
+  height: 240px;
+  background: #f5f5f5;
+  border: 2px solid #c3c6ce;
+  overflow: visible;
+
+  box-shadow: 0px 24px 24px -16px hsl(229, 6%, 66%);
+  animation: card-move 1s ease-out;
+
+  h1 {
+    /* border-bottom: 1px solid black; */
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 1rem;
+    float: right;
+    align-items: flex-end;
+    position: absolute;
+    margin-left: 1rem;
+    bottom: 0;
+    right: 0;
+  }
+
+}
+
+@keyframes card-move {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.card-details {
+  display: grid;
+  place-content: center;
+  color: black;
+  height: 100%;
+  gap: .5em;
+
+  .text-body {
+    color: rgb(100, 96, 96);
+  }
+
+  .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.card-button {
+  width: 60%;
+
+  position: absolute;
+  left: 20%;
+  bottom: -25%;
+  opacity: 0;
+
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 1rem;
+  color: #fff;
+  background-color: #008bf8;
+}
+
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  scale: 1.05;
+}
+
+.card:hover .card-button {
+  transition: 0.5s ease-out;
+  transform: translateY(-125%);
+  opacity: 1;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.club-details {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+  img {
+    margin-top: 0px;
+  }
+}
+
+.club-info {
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+.club-image {
+  width: 650px;
+  height: 450px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.event {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.event-card {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 50rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-width: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 3px solid hsl(180, 62%, 55%);
+  padding: 1rem;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+
+  >h1 {
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0px;
+  }
+}
+
+.event-card-details {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+
+  >.date-card {
+    position: relative;
+    min-width: 7rem;
+    border: 1px solid #c2c1c1;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    line-height: 1rem;
+
+    >.month {
+      position: relative;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: white;
+      background-color: #E71321;
+    }
+
+    >.day {
+      display: block;
+      /* padding: 0.25rem; */
+      margin: 0.25rem;
+      font-weight: 600;
+      text-align: center;
+
+      color: #1f7bc1;
+    }
+
+    >.year {
+      display: block;
+      text-align: center;
+      color: #6c757d;
+      font-weight: 700;
+      margin: 0 0.5rem;
+      padding: 0.25rem;
+      border-top: 1px solid #e8ebee;
+    }
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 37.5rem;
+}
+
+th {
+  width: 25%;
+}
+
+.tr-header {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 1rem;
+  margin-top: 0px;
+}
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* about */
+.dropdown-about {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-about button {
+  background: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Consolas;
+}
+
+.dropdown-about .dropbtn-about {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content-about {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-about a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-about a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-about:hover .dropdown-content-about {
+  display: block;
+}
+
+
+/* clubs */
+.dropdown-club {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-club button {
+  background: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Consolas;
+}
+
+.dropdown-club .dropbtn-club {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content-club {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-club a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-club a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-club:hover .dropdown-content-club {
+  display: block;
+}
+
+/* events */
+.dropdown-event {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-event button {
+  background: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Consolas;
+}
+
+.dropdown-event .dropbtn-event {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content-event {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-event a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-event a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-event:hover .dropdown-content-event {
+  display: block;
+}
+
+/* Home */
+.dropdown-home {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-home button {
+  background: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Consolas;
+}
+
+.dropdown-home .dropbtn-home {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-home:hover {
+  display: block;
+}
+
+/* Join */
+
+.dropdown-join {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-join button {
+  background: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Consolas;
+}
+
+.dropdown-join .dropbtn-join {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-join:hover {
+  display: block;
+}
+
+/* Tech Team */
+.dropdown-tech {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-tech button {
+  background: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Consolas;
+}
+
+.dropdown-tech .dropbtn-tech {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-tech:hover {
+  display: block;
+}
+
+body {
+  background-color: #fff;
+}
+
+.about-us {
+  margin-left: 3rem;
+  flex: 6;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.about {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.benito-about {
+  display: flex;
+}
+
+.about-text {
+  width: 600px;
+  font-size: 1.5rem;
+}
+
+.about-text-main {
+  width: 1100px;
+  font-size: 1.5rem;
+}
+
+.admin-img {
+  width: 200px;
+  height: 300px;
+}
+
+.all-card {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.join-card {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background: whitesmoke;
+  border: .5px solid gray;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  padding: 2rem;
+
+  h1 {
+    padding-bottom: 1rem;
+    border-bottom: .5px solid darkblue;
+  }
+}
+
+.events {
+  display: flex;
+  flex-flow: row;
+}
+
+.the-events {
+  display: flex;
+  flex-flow: column;
+  flex: 6;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+}
+
+.menu-content {
+
+  position: relative;
+  /* margin: 270px auto 0; */
+  /* width: 590px; */
+  /* height: 50px; */
+  /* background: #34495e; */
+  border-radius: 8px;
+  font-size: 0;
+  /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1); */
+
+
+  >div {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .animation {
+    position: absolute;
+    height: 40px;
+    /* height: 5px; */
+    top: 0;
+    /* bottom: 0; */
+    z-index: 0;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+  }
+
+  .dropdown-home {
+    width: 118px;
+  }
+
+  .start-home, .dropdown-home:hover~.animation {
+    width: 118px;
+    left: 0;
+  }
+
+  .dropdown-about {
+    width: 132px;
+  }
+
+  .dropdown-about:hover .dropdown-content-about {
+    display: block;
+  }
+
+  .start-about, .dropdown-about:hover~.animation {
+    width: 132px;
+    left: 118px;
+  }
+
+  .dropdown-club {
+    width: 225px;
+  }
+
+  .start-club, .dropdown-club:hover~.animation {
+    width: 225px;
+    left: 250px;
+  }
+
+  .dropdown-event {
+    width: 130px;
+  }
+
+  .start-event, .dropdown-event:hover~.animation {
+    width: 130px;
+    left: 475px;
+  }
+
+  .dropdown-join {
+    width: 103px;
+  }
+
+  .start-join, .dropdown-join:hover~.animation {
+    width: 103px;
+    left: 605px;
+  }
+
+  .dropdown-tech {
+    width: 126px;
+  }
+
+  .start-tech, .dropdown-tech:hover~.animation {
+    width: 126px;
+    left: 708px;
+  }
+}
+
+.menu-content .toggle-btn{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 150px;
+  height: 0;
+  width: 300px;
+  background-color: darkcyan;
+  backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+  height: 260px;
+}
+
+.dropdown-menu .menu-items{
+  padding: 0.7rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu a:hover{
+  color: darkblue;
+}
+
+/* Tablet Screen Do not go past */
+/* Tablet Screen Do not go past */
+/* Mobile Screen Do not go past */
+/* Mobile Screen Do not go past */
+/* Mobile Screen Do not go past */
+/* Mobile Screen Do not go past */
+
+@media (max-width: 1100px){
+  .dropbtn-about, .dropbtn-club, .dropbtn-event, .dropbtn-home, .dropbtn-join, .dropbtn-tech{
+    display: none;
+  }
+
+  .menu-content .toggle-btn{
+    display: block;
+    float: right;
+  }
+
+  .dropdown-menu{
+    display: block;
+  }
+  .menu{
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 635px) {
+  .dropdown-menu{
+    left: 2rem;
+    width: unset;
+    background-color: darkcyan;
+  }
+  .menu{
+    width: 100%;
+    height: 50px;
+  }
+  .fa-bars{
+    float: right;
+    right: 0;
+  }
+}

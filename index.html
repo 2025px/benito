@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header class="top">
         <div class="logo">
             <img src="/img/Benito.png" alt="benito logo">
@@ -32,10 +31,10 @@
                 </div>
                 <div class="menu-items">
                     <div class="dropdown-about">
-                        <a href="About.html">About</a>
+                        <i class="fa-solid fa-circle-info fa-lg"></i><a href="About.html">About</a>
                         <i class="fa fa-caret-down"></i>
                         <div class="dropdown-content-about">
-                            <a href="Administration.html"> Administration</a>
+                            <a href="Administration.html">Administration</a>
                             <a href="history.html"> History</a>
                             <a href="mission.html"> Mission and Vision</a>
                         </div>
@@ -43,8 +42,7 @@
                 </div>
                 <div class="menu-items">
                     <div class="dropdown-club">
-                        <a href="clubs.html">Clubs & Organizations</a>
-                        <i class="fa fa-caret-down"></i>
+                        <a href="clubs.html">Clubs & Organizations</a><i class="fa fa-caret-down"></i>
                         <div class="dropdown-content-club">
                             <a href="AVID.html"> AVID </a>
                             <a href="Book-clubs.html"> Book Clubs</a>
@@ -79,6 +77,7 @@
                 <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
                 <div class="animation start-home"></div>
             </div>
+
             <div class="dropdown-menu">
                 <div class="menu-items">
                     <div class="dropdown-home">
@@ -132,41 +131,33 @@
             </div>
         </nav>
     </header>
-    <div class="main-page">
-    </div>
+
+    <section class="main-page">
+        <div class="slideshow"></div>
+    </section>
+
     <footer class="footer">
         <img class="img-footer" src="/img/benitoMap.jpg">
         <div class="contact">
             <div class="visit">
                 <div class="footer-top">
                     <i class="fa-solid fa-location-arrow"></i>
-                    <h1>
-                        Visit Us
-                    </h1>
+                    <h1>Visit Us</h1>
                 </div>
-                <p>
-                    10101 Cross Creek Boulevard
-                </p>
-                <p>
-                    Tampa, FL 33647
-                </p>
+                <p>10101 Cross Creek Boulevard</p>
+                <p>Tampa, FL 33647</p>
             </div>
             <div class="contact-us">
                 <div class="footer-top">
                     <i class="fa-solid fa-comment"></i>
-                    <h1>
-                        Contact Us
-                    </h1>
+                    <h1>Contact Us</h1>
                 </div>
-                <p>
-                    Phone: (813) 631-4694
-                </p>
-                <p>
-                    Fax: (813) 631-4706
-                </p>
+                <p>Phone: (813) 631-4694</p>
+                <p>Fax: (813) 631-4706</p>
             </div>
         </div>
     </footer>
+
     <script>
         const toggleBtn = document.querySelector('.toggle-btn')
         const toggleBtnIcon = document.querySelector('.toggle-btn i')

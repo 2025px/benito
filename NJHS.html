@@ -27,10 +27,13 @@
     <nav class="menu-container">
       <div class="menu">
         <div class="menu-content">
+          <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
           <div class="dropdown-home">
+
             <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
           </div>
           <div class="dropdown-about">
+
             <a href="About.html">About</a>
             <i class="fa fa-caret-down"></i>
             <div class="dropdown-content-about">
@@ -40,7 +43,8 @@
             </div>
           </div>
           <div class="dropdown-club">
-            <a href="clubs.html">Clubs & Organizations</a><i class="fa fa-caret-down"></i>
+
+            <a href="clubs.html">Clubs & Organizations</a>
             <div class="dropdown-content-club">
               <a href="AVID.html"> AVID </a>
               <a href="Book-clubs.html"> Book Clubs</a>
@@ -52,7 +56,9 @@
             </div>
           </div>
           <div class="dropdown-event">
-            <i class="fa-solid fa-calendar-days"></i> <a href="events.html">Events</a>
+
+            <i class="fa-solid fa-calendar-days"></i>
+            <a href="events.html">Events</a>
             <i class="fa fa-caret-down"></i>
             <div class="dropdown-content-event">
               <a href="events.html"> Upcoming Events</a>
@@ -60,18 +66,36 @@
             </div>
           </div>
           <div class="dropdown-join">
+
             <a href="Join.html">Join Us <i class="fa-solid fa-users"></i> </a>
           </div>
           <div class="dropdown-tech">
+
             <a href="Tech.html"> Tech Team</a>
           </div>
           <div class="underline start-club"></div>
         </div>
       </div>
     </nav>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const toggleBtnIcon = document.querySelector('.toggle-btn i');
+      const menuContent = document.querySelector('.menu-content');
+
+      toggleBtn.onclick = function () {
+        menuContent.classList.toggle('open');
+        const isOpen = menuContent.classList.contains('open');
+
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
+      }
+    </script>
+
   </header>
+
   <main class="main-page">
-    <section class="club-details">
+    <section class="main-page-details">
       <div class="side-bar">
         <h1>
           Clubs & Organizations

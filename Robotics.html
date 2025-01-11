@@ -28,10 +28,13 @@
     <nav class="menu-container">
       <div class="menu">
         <div class="menu-content">
+          <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
           <div class="dropdown-home">
+
             <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
           </div>
           <div class="dropdown-about">
+
             <a href="About.html">About</a>
             <i class="fa fa-caret-down"></i>
             <div class="dropdown-content-about">
@@ -41,7 +44,8 @@
             </div>
           </div>
           <div class="dropdown-club">
-            <a href="clubs.html">Clubs & Organizations</a><i class="fa fa-caret-down"></i>
+
+            <a href="clubs.html">Clubs & Organizations</a>
             <div class="dropdown-content-club">
               <a href="AVID.html"> AVID </a>
               <a href="Book-clubs.html"> Book Clubs</a>
@@ -53,7 +57,9 @@
             </div>
           </div>
           <div class="dropdown-event">
-            <i class="fa-solid fa-calendar-days"></i> <a href="events.html">Events</a>
+
+            <i class="fa-solid fa-calendar-days"></i>
+            <a href="events.html">Events</a>
             <i class="fa fa-caret-down"></i>
             <div class="dropdown-content-event">
               <a href="events.html"> Upcoming Events</a>
@@ -61,20 +67,37 @@
             </div>
           </div>
           <div class="dropdown-join">
+
             <a href="Join.html">Join Us <i class="fa-solid fa-users"></i> </a>
           </div>
           <div class="dropdown-tech">
+
             <a href="Tech.html"> Tech Team</a>
           </div>
           <div class="underline start-club"></div>
         </div>
       </div>
     </nav>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const toggleBtnIcon = document.querySelector('.toggle-btn i');
+      const menuContent = document.querySelector('.menu-content');
+
+      toggleBtn.onclick = function () {
+        menuContent.classList.toggle('open');
+        const isOpen = menuContent.classList.contains('open');
+
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
+      }
+    </script>
+
   </header>
 
   <main class="main-page">
 
-    <section class="club-details">
+    <section class="main-page-details">
       <div class="side-bar">
         <h1>
           Clubs & Organizations
@@ -102,18 +125,6 @@
         </a>
       </div>
 
-      <!-- <svg id="sw-js-blob-svg" width="240" height="240">
-      <defs>
-        <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-          <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
-          <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path id="cutView" fill="url(#sw-gradient)"
-        d="M25.4,-30.6C30.5,-26,30.5,-15.7,31.4,-6.2C32.3,3.3,34,12,31.2,19C28.3,26.1,20.9,31.5,12.5,34.8C4,38.1,-5.3,39.3,-13.2,36.4C-21.1,33.5,-27.6,26.6,-32.6,18.5C-37.6,10.4,-41.2,1.3,-39.8,-7C-38.4,-15.3,-31.8,-22.8,-24.4,-27C-16.9,-31.2,-8.4,-32.2,0.9,-33.2C10.2,-34.2,20.3,-35.3,25.4,-30.6Z"
-        width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: 0.3s;"></path>
-    </svg> -->
-
       <div class="club-image">
         <svg viewBox="0 0 814 506">
           <defs>
@@ -126,16 +137,10 @@
           </defs>
           <image class="svg-image" width="100%" height="100%" x="-150px" y="-40px" clip-path="url(#mask)"
             xlink:href="/img/robotics.jpg" />
-
         </svg>
+        <!-- <img style="clip-path: url(#mask);" class="abstract-shape" src="/img/robotics.jpg" alt="" /> -->
       </div>
 
-      <!-- 
-    <img style="clip-path: url(#mask);"
-         class="abstract-shape"
-         src="/img/robotics.jpg"
-         alt="" /> 
-    -->
       <div class="club-info">
         <h1 class="title">
           Robotics
@@ -165,6 +170,7 @@
           also FBLA advisor for Bentito Middle School) or by Mrs. Forman (Science teacher)
         </p>
       </div>
+
     </section>
 
     <section class="event-highlights">

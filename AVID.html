@@ -19,7 +19,7 @@
   <header class="top">
     <div class="logo-container">
       <div class="logo">
-        <img src="/img/jaguar-small.png" alt="benito logo" />
+        <img src="/img/jaguar-small.png" alt="benito logo">
         <div class="logo-info">
           <h1>Benito Middle School</h1>
           <h2>A Hillsborough County Public School</h2>
@@ -29,6 +29,7 @@
     <nav class="menu-container">
       <div class="menu">
         <div class="menu-content">
+          <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
           <div class="dropdown-home">
 
             <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
@@ -45,7 +46,7 @@
           </div>
           <div class="dropdown-club">
 
-            <a href="clubs.html">Clubs & Organizations</a><i class="fa fa-caret-down"></i>
+            <a href="clubs.html">Clubs & Organizations</a>
             <div class="dropdown-content-club">
               <a href="AVID.html"> AVID </a>
               <a href="Book-clubs.html"> Book Clubs</a>
@@ -78,10 +79,25 @@
         </div>
       </div>
     </nav>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const toggleBtnIcon = document.querySelector('.toggle-btn i');
+      const menuContent = document.querySelector('.menu-content');
+
+      toggleBtn.onclick = function () {
+        menuContent.classList.toggle('open');
+        const isOpen = menuContent.classList.contains('open');
+
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
+      }
+    </script>
+
   </header>
 
   <main class="main-page">
-    <section class="club-details">
+    <section class="main-page-details">
 
       <div class="side-bar">
         <h1>Clubs & Organizations</h1>

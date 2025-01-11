@@ -16,67 +16,84 @@
 <body>
     <header class="top">
         <div class="logo-container">
-            <div class="logo">
-                <img src="/img/jaguar-small.png" alt="benito logo">
-                <div class="logo-info">
-                    <h1>Benito Middle School</h1>
-                    <h2>A Hillsborough County Public School</h2>
-                </div>
+          <div class="logo">
+            <img src="/img/jaguar-small.png" alt="benito logo">
+            <div class="logo-info">
+              <h1>Benito Middle School</h1>
+              <h2>A Hillsborough County Public School</h2>
             </div>
+          </div>
         </div>
         <nav class="menu-container">
-            <div class="menu">
-                <div class="menu-content">
-                    <div class="menu-items">
-                    <div class="dropdown-home">
-                        <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
-                    </div>
-                    </div>
-                    <div class="menu-items">
-                        <div class="dropdown-about">
-                            <i class="fa-solid fa-circle-info fa-lg"></i><a href="About.html">About</a><i
-                                class="fa fa-caret-down"></i>
-                            <div class="dropdown-content-about">
-                                <a href="Administration.html">Administration</a>
-                                <a href="history.html"> History</a>
-                                <a href="mission.html"> Mission and Vision</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                    <div class="dropdown-club">
-                        <a href="clubs.html">Clubs & Organizations</a><i class="fa fa-caret-down"></i>
-                        <div class="dropdown-content-club">
-                            <a href="AVID.html"> AVID </a>
-                            <a href="Book-clubs.html"> Book Clubs</a>
-                            <a href="FBLA.html"> FBLA </a>
-                            <a href="NJHS.html"> NJHS </a>
-                            <a href="PTSA.html"> PTSA</a>
-                            <a href="Robotics.html"> Robotics </a>
-                            <a href="sport.html">Athletics</a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="menu-items">
-                    <div class="dropdown-event">
-                        <i class="fa-solid fa-calendar-days"></i> <a href="events.html">Events</a>
-                        <i class="fa fa-caret-down"></i>
-                        <div class="dropdown-content-event">
-                            <a href="events.html"> Upcoming Events</a>
-                            <a href="pre-event.html"> Previous/Past Events</a>
-                        </div>
-                    </div>
-                    <div class="dropdown-join">
-                        <a href="Join.html">Join Us <i class="fa-solid fa-users"></i> </a>
-                    </div>
-                    <div class="dropdown-tech">
-                        <a href="Tech.html"> Tech Team</a>
-                    </div>
-                    <div class="underline start-join"></div>
+          <div class="menu">
+            <div class="menu-content">
+              <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+              <div class="dropdown-home">
+    
+                <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
+              </div>
+              <div class="dropdown-about">
+    
+                <a href="About.html">About</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content-about">
+                  <a href="Administration.html"> Administration</a>
+                  <a href="history.html"> History</a>
+                  <a href="mission.html"> Mission and Vision</a>
                 </div>
+              </div>
+              <div class="dropdown-club">
+    
+                <a href="clubs.html">Clubs & Organizations</a>
+                <div class="dropdown-content-club">
+                  <a href="AVID.html"> AVID </a>
+                  <a href="Book-clubs.html"> Book Clubs</a>
+                  <a href="FBLA.html"> FBLA </a>
+                  <a href="NJHS.html"> NJHS </a>
+                  <a href="PTSA.html"> PTSA</a>
+                  <a href="Robotics.html"> Robotics </a>
+                  <a href="sport.html">Athletics</a>
+                </div>
+              </div>
+              <div class="dropdown-event">
+    
+                <i class="fa-solid fa-calendar-days"></i>
+                <a href="events.html">Events</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content-event">
+                  <a href="events.html"> Upcoming Events</a>
+                  <a href="pre-event.html"> Previous/Past Events</a>
+                </div>
+              </div>
+              <div class="dropdown-join">
+    
+                <a href="Join.html">Join Us <i class="fa-solid fa-users"></i> </a>
+              </div>
+              <div class="dropdown-tech">
+    
+                <a href="Tech.html"> Tech Team</a>
+              </div>
+              <div class="underline start-join"></div>
             </div>
+          </div>
         </nav>
-    </header>
+        <script>
+          const toggleBtn = document.querySelector('.toggle-btn');
+          const toggleBtnIcon = document.querySelector('.toggle-btn i');
+          const menuContent = document.querySelector('.menu-content');
+    
+          toggleBtn.onclick = function () {
+            menuContent.classList.toggle('open');
+            const isOpen = menuContent.classList.contains('open');
+    
+            toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars';
+          }
+        </script>
+    
+      </header>
+
     <main class="main-page">
         <div class="join-cards-container">
             <div class="join-card">
